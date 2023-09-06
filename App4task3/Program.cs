@@ -1,0 +1,36 @@
+﻿namespace VremenaGoda
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string month;
+            Console.WriteLine("Nmber of moth");
+            month = Console.ReadLine();
+            switch (month)
+            {
+                case "1":
+                case "2":
+                case "12":
+                Console.WriteLine("Winter");
+                    break;
+                case "3":
+                case "4":
+                case "5":
+                Console.WriteLine("Spring");
+                    break;
+                case "6":
+                case "8":
+                Console.WriteLine("Summer");
+                    break;
+                case "9":
+                case "11":
+                Console.WriteLine("Autumn");
+                    break;
+                default:
+                    Console.WriteLine("Incorrect input");
+                    break;
+            }
+        }
+    }
+}
